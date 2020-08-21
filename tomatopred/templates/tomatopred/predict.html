@@ -1,0 +1,347 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Plants Agriculture Category Bootstrap Responsive Website Template | Home :: W3layouts</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+
+    <!--// Meta tag Keywords -->
+
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="{% static 'tomatopred/css/bootstrap.css' %}">
+    <!-- Bootstrap-Core-CSS -->
+    <link href="{% static 'tomatopred/css/css_slider.css' %}" type="text/css" rel="stylesheet" media="all">
+    <!-- banner slider -->
+    <link rel="stylesheet" href="{% static 'tomatopred/css/style.css' %}" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <link href="{% static 'tomatopred/css/font-awesome.min.css' %}" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'tomatopred/js/jquery.min.js' %}"></script>
+    <!-- Font-Awesome-Icons-CSS -->
+
+
+    <!-- Web-Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Niconne&amp;subset=latin-ext" rel="stylesheet">
+    <link
+        href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext"
+        rel="stylesheet">
+    <!-- //Web-Fonts -->
+</head>
+
+<body>
+    <div id="home">
+        <!-- header -->
+        <header class="header-style fixed-top ">
+            <div class="container">
+                <div class="header d-lg-flex justify-content-between align-items-center">
+                    <!-- logo -->
+                    <h1 class="logo float-left">
+                        <a href="{% url 'input' %}">Soilless Plants Disease Detection<i class="fa fa-pagelines"
+                                aria-hidden="true"></i>
+                        </a>
+                    </h1>
+                    <!-- //logo -->
+                    <!-- nav -->
+                    <div class="nav_w3ls">
+                        <nav>
+                            <input type="checkbox" id="drop" />
+                            <ul class="menu">
+                                <li class="active" style="margin-left: 100px;"><a href="{% url 'input' %}">Home</a></li>
+                                <li><a href="#team">Developed By</a></li>
+
+
+                                <li class="mr-0"><a href="#about">Prediction</a></li>
+
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- //nav -->
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- banner -->
+        <div class="banner_w3lspvt">
+            <div class="csslider infinity" id="slider1">
+                <input type="radio" name="slides" checked="checked" id="slides_1" />
+                <input type="radio" name="slides" id="slides_2" />
+                <input type="radio" name="slides" id="slides_3" />
+                <input type="radio" name="slides" id="slides_4" />
+                <ul>
+                    <li>
+                        <div class="banner-top">
+                            <div class="container">
+                                <div class="w3layouts-banner-info text-center">
+                                    <h3 class="text-wh">Welcome to Soilless Plants Disease Detection</h3>
+                                    <p class="text-li mx-auto mt-2">We provide you an easy way to recognize the diseases
+                                        of plants !
+
+                                    </p>
+                                    <a href="#about" class="button-style scroll mt-sm-5 mt-4">Go</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="banner-top1">
+                            <div class="container">
+                                <div class="w3layouts-banner-info text-center">
+                                    <h3 class="text-wh">Step 1: Select the image and upload it</h3>
+                                    <p class="text-li mx-auto mt-2">Select the image from your local computer and upload
+                                        it.</p>
+                                    <a href="#about" class="button-style scroll mt-sm-5 mt-4">Go</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="banner-top2">
+                            <div class="container">
+                                <div class="w3layouts-banner-info text-center">
+                                    <h3 class="text-wh">Step 2: Click on Predict Button and wait</h3>
+                                    <p class="text-li mx-auto mt-2">After clicking on the Predict button wait for the
+                                        model to predict the image of leaf!</p>
+
+                                    <a href="#about" class="button-style scroll mt-sm-5 mt-4">Go</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="banner-top3">
+                            <div class="container">
+                                <div class="w3layouts-banner-info text-center">
+                                    <h3 class="text-wh">Last Step: Watch out for the output</h3>
+                                    <p class="text-li mx-auto mt-2" style="font-size: 20px;color:white;">The result will
+                                        show the probability of diseases the leaf can be infected with, it will show two
+                                        names one with highest probability and the other with less!</p>
+                                    <a href="#about" class="button-style scroll mt-sm-5 mt-4">Go</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="arrows">
+                    <label for="slides_1"></label>
+                    <label for="slides_2"></label>
+                    <label for="slides_3"></label>
+                    <label for="slides_4"></label>
+                </div>
+            </div>
+            <div class="icon-w3">
+                <a href="#about" class="scroll" style="margin-left: 50%;">
+                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <!-- //banner -->
+    </div>
+    <!-- //main -->
+
+
+
+    <!-- about -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 about-left-w3pvt offset-lg-1">
+                    <div class="main-img">
+                        {% if flag %}
+                        <img src="media/upload/uploads.jpg" id="pos-aboimg2" alt="" class="img-fluid">
+                        {% else %}
+                        <img src="{% static 'tomatopred/images/ab2.jpg' %}" id="pos-aboimg2" alt="" class="img-fluid">
+                        {% endif %}
+
+
+
+                        <img id='img-upload1' class="img-fluid" />
+                        <form class="" enctype="multipart/form-data" action="{% url 'input' %}" method="POST"> 
+                            {% csrf_token %}
+
+                            <div class="form-group">
+
+                                <label for="imgInp" class="mb-3">Please select current phase of the plant: </label>
+
+                                <select id="nutr" class="input-group" name="nutr">
+                                    <option value="1">Phase 1 - 0 to 15 days</option>
+                                    <option value="2">Phase 2 - 16 to 30 days</option>
+                                    <option value="3">Phase 3 - 31 to 45 days</option>
+                                    <option value="4">Phase 4 - 46 to 60 days</option>
+                                    <option value="6">Phase 5 - 61 days and above</option>
+                                  </select>
+                                  <br>
+                            {% if flag %}
+                            <label for="imgInp" class="mb-3">If you want to test extra images: </label>
+                            {% else %}
+                            <label for="imgInp" class="mb-3">Please Give a leaf image as input: </label>
+                            {% endif %}
+
+                                <div class="input-group">
+                                    
+                                    
+                                    <span class="input-group-btn">
+                                        <span class="btn btn-default btn-file">
+                                            <input type="file" name="file" id="imgInp1">
+                                        </span>
+                                    </span>
+                                    
+
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-success" style="margin-left: 100px;"
+                                    type="submit">Predict</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                {% if flag %}
+                <div class="col-lg-6 about-right offset-lg-1" style="margin-top: 90px;">
+                    <h4 class="sub-tittle-w3layouts let" style="font-size: 25px;">The Model has predicted your given
+                        image as: </h4>
+
+                    <p class="mt-4 mb-5">
+                        <span style="font-size: 30px;color: black;">Tomato plant {{result}} </span>
+
+                        {% if flag_nutr %}
+                        <span style="font-size: 30px;color: black;"><br>We recommend you to add <span style="color: orangered; font-size: 35px;"> {{nutr}} ml </span> of nutrients </span><br><br>
+                        <span style="color: orangered; font-size: 14px;" >The plant is having disease {{result2}} with {{highperc}} % accuracy</span><br>
+                        <span style="color: green; font-size: 14px;">The Plant is {{healthprc}} % Healthy </span><br>
+                        
+
+                        {% else %}
+                        <span style="font-size: 30px;color: black;"><br>No need for extra nutrients. </span><br><br>
+                        <span style="color: green; font-size: 14px;">The Plant is {{healthprc}} % Healthy </span><br>
+                        <span style="color: orangered; font-size: 14px;" >Model also predicted that plant is {{highperc}} % chances of having {{result2}} Disease</span>
+                        {% endif %}
+                        
+                        
+                    </p>
+
+                </div>
+                {% else %}
+
+                <div class="col-lg-6 about-right offset-lg-1" style="margin-top: 90px;">
+                    <h4 class="sub-tittle-w3layouts let" style="font-size: 25px;">Instructions while uploading:</h4>
+
+                    <p class="mt-4 mb-5">
+                        <ul style="font-size: 20px;">
+                            <li>The image background should be plain as instructed in the given image</li>
+                            <li>The image should be taken in well lit condition</li>
+                            <li>Image should have the extension as jpg,png or jpeg</li>
+                        </ul>
+                        <span style="font-size: 20px;">After uploading the image press the predict button to see the
+                            results.</span>
+                    </p>
+
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    <!-- //about -->
+
+    <!-- services -->
+    <div class="serives-agile py-5" id="services">
+        <div class="container py-xl-5 py-lg-3">
+            <div class="row support-bottom text-center">
+                <div class="col-md-4 services-w3ls-grid">
+                    <i class="fa fa-envira" aria-hidden="true"></i>
+                    <h4 class="text-wh text-uppercase mt-md-5 mt-4 mb-3">Feature Extraction</h4>
+                    <p>The trained model understands the features of the given leaf by the user and extracts those
+                        information and predict the disease accordingly</p>
+                </div>
+                <div class="col-md-4 services-w3ls-grid my-md-0 my-4">
+                    <i class="fa fa-tree" aria-hidden="true"></i>
+                    <h4 class="text-wh text-uppercase mt-md-5 mt-4 mb-3">Edge Detection</h4>
+                    <p>One of the trained model also understands the shapes and edges of the given leaf, some disease
+                        are easily recognized by their non-regular shapes</p>
+                </div>
+                <div class="col-md-4 services-w3ls-grid">
+                    <i class="fa fa-pagelines" aria-hidden="true"></i>
+                    <h4 class="text-wh text-uppercase mt-md-5 mt-4 mb-3">Good Prediction Rate</h4>
+                    <p>Both the trained models compute the input and predict two output one with feature extraction and
+                        second with the edge or shape detection thus giving high accuracy and correct predictions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //services -->
+
+
+    <!-- team -->
+    <div class="team py-5" id="team">
+        <div class="container py-xl-5 py-lg-3">
+            <h3 class="w3ls-title text-da text-center font-weight-bold mb-5 pb-xl-4">Developed By</h3>
+
+            <div class="team-bottom pt-4 text-center">
+                <div class=" team-grid">
+                    <img src="{% static 'tomatopred/images/user.png' %}" class=" img-fluid" style="width: 250px;"
+                        alt="">
+                    <div class="caption">
+                        <div class="team-text">
+                            <h4>Rajlaxmi Salunkhe</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //team -->
+
+
+
+
+    <!-- move top icon -->
+    <a href="#home" class="move-top text-center"></a>
+    <!-- //move top icon -->
+
+</body>
+
+</html>
+<script>
+    $(document).ready(function () {
+        $(document).on('change', '.btn-file :file', function () {
+            var input = $(this),
+                label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+            input.trigger('fileselect', [label]);
+        });
+
+        $('.btn-file :file').on('fileselect', function (event, label) {
+
+            var input = $(this).parents('.input-group').find(':text'),
+                log = label;
+
+        });
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#img-upload1').attr('src', e.target.result);
+                    $("#img-upload1").show();
+                    $("#pos-aboimg2").hide();
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#imgInp1").change(function () {
+            readURL(this);
+        });
+    });
+</script>
+
+
+<script src="{% static 'tomatopred/js/bootstrap.min.js' %}"></script>
